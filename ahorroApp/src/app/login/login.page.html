@@ -1,0 +1,48 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title class="ion-text-center letra-label">
+      AhorroApp
+    </ion-title>
+    <ion-card-subtitle class="ion-text-center">aqu&iacute; comienza todo</ion-card-subtitle>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar class="fondo-card ">
+      <ion-title class="letra-label">AhorrApp</ion-title>
+     <ion-card-subtitle>aqu&iacute; comienza todo</ion-card-subtitle>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <div class="ion-text-center contenedor-con-espacio fondo">
+    <ion-card class="contenedor-con-espacio fondo-card">
+      <ion-card-header>
+        <ion-card-title class="letra-llamativa">Ahorro App</ion-card-title>
+        <ion-card-subtitle class="letra-label">Bienvenidos!</ion-card-subtitle>
+      </ion-card-header>
+      <div class="animacion-rotacion">
+        <img class= "imagen" alt="chanchito para ahorrar" src="../../assets/icon/651132.png" />
+      </div>
+      <ion-card-content class="letra-texto">
+        Aplicación para el control de ahorros personales.
+      </ion-card-content>
+
+
+      <ion-label class="letra-label" position="floating" for="usuarioLogIn">Usuario</ion-label>
+      <ion-input class="style-input letra-texto " type="text" maxlength="8" minlength="3" [(ngModel)]="usuarioLogIn" name="usuarioLogIn"></ion-input>
+      <br>
+      <ion-label class="letra-label" position="floating" for="contrasenaLogIn">Contrase&nacute;a</ion-label>
+      <ion-input class="style-input letra-texto " type="password" maxlength="4" [(ngModel)]="contrasenaLogIn" name="contrasenaLogIn"></ion-input>
+  
+      <ion-card-content>
+        <ion-button shape="round" color="tertiary" class="boton" expand="block" (click)="login()" type="submit">Ingresar</ion-button>
+
+
+        <p class="letra-llamativa" (click)="CrearCuenta()">Crear cuenta</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

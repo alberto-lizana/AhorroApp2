@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Crear Usuario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title>
+        Crear Usuario
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="contenedor-con-espacio ion-text-center">
+    <ion-card class="fondo-card ion-text-center contenedor-con-espacio" >
+      <ion-card-title>
+        <h1>Bienvenido!</h1>
+      </ion-card-title>
+      
+      <div [@slideInOut]="animationState">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item style="--background: #2E7D32; --color: #ffffff;" >
+                <ion-label position="floating" class="letra-label">Nombre</ion-label> <br>
+                <ion-input class="letra-llamativa-pequeña" type="text" placeholder="Ingrese nombre" [(ngModel)]="nombre" name="nombre" required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div [@slideInOut]="animationState">
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col>
+              <ion-item style="--background: #2E7D32; --color: #ffffff;">
+                <ion-label position="floating" class="letra-label">Apellido</ion-label> <br>
+                <ion-input class="letra-llamativa-pequeña" type="text" placeholder="Ingrese apellido" [(ngModel)]="apellido" name="apellido" required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <ion-grid >
+        <ion-row>
+          <ion-col>
+            <ion-item style="--background: #2E7D32; --color: #ffffff;">
+              <ion-label position="floating" class="letra-label">Educaci&oacute;n</ion-label> <br>
+              <ion-select class="letra-llamativa-pequeña" placeholder="Seleccione Nivel" [(ngModel)]="selectedOption" name="selectedOption">
+                <ion-select-option *ngFor="let option of educacionOptions" [value]="option">{{ option }}</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item style="--background: #2E7D32; --color: #ffffff;">
+              <ion-label position="floating" class="letra-label">Usuario</ion-label> <br>
+              <ion-input class="letra-llamativa-pequeña" type="text" maxlength="8" minlength="3" placeholder="Ingrese Usuario" [(ngModel)]="usuario" name="usuario" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item style="--background: #2E7D32; --color: #ffffff;">
+              <ion-label position="floating" class="letra-label">Contrase&nacute;a</ion-label> <br>
+              <ion-input class="letra-llamativa-pequeña" type="password" maxlength="4" placeholder="Ingrese contrasena" [(ngModel)]="contrasena" name="contrasena" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item style="--background: #2E7D32; --color: #ffffff;">
+              <ion-label position="floating" class="letra-label">Repetir Contrase&nacute;a</ion-label> <br>
+              <ion-input class="letra-llamativa-pequeña" type="password" maxlength="4" placeholder="Repita contrasena" [(ngModel)]="Rcontrasena" name="Rcontrasena" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid >
+        <ion-row>
+          <ion-col>
+            <ion-card-content>
+              <ion-button shape="round" color="tertiary" (click)="limpiarDatos()">Limpiar</ion-button>
+              <ion-button shape="round" color="tertiary" (click)="CrearCuenta()">Enviar</ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-card>
+  </div>
+</ion-content>
+

@@ -1,0 +1,85 @@
+.fondo {
+    background-color: #1E1E1E; 
+    padding: 20px; 
+    height: 100%; 
+    overflow: auto; 
+  }
+  
+.fondo-card {
+    background-color: #2E7D32; 
+    overflow: auto; 
+    border-radius: 10px;
+}
+
+.transparente {
+    background-color: transparent; 
+    padding: 20px; 
+    height: 100%; 
+    overflow: auto; 
+  }
+
+.letra-label{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.style-input{
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.514);
+    border-radius: 20px;
+    background-color: #419745;
+}
+
+.letra-llamativa{
+    color: #FFFF00;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.letra-texto {
+    color: white;
+    font-weight: 300;
+    font-size: small;
+
+}
+
+.contenedor-con-espacio {
+    padding: 20px; 
+  }
+
+.imagen {
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+}
+
+.animacion-rotacion {
+    justify-content: center;
+    align-items: center;
+
+    img {
+        animation: rotate 10s linear infinite;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(40deg); 
+    }
+    50% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(-40deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+

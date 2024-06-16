@@ -1,0 +1,55 @@
+
+.fondo {
+  background-color: #1E1E1E; 
+  padding: 20px; 
+  height: 100%; 
+  overflow: auto; 
+}
+
+.fondo-card {
+  background-color: #2E7D32; 
+  overflow: auto; 
+  border-radius: 10px;
+}
+
+.letra-label{
+  color: white;
+  font-weight: 500;
+  font-size: large;
+}
+
+.letra-llamativa-pequeña{
+  color: #FFFF00;
+  font-weight: 300;
+  font-size: medium;
+}
+
+.contenedor-con-espacio {
+  padding: 20px; 
+}
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+

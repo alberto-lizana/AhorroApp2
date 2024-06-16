@@ -1,0 +1,7 @@
+{
+  "name": "ahorroApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
